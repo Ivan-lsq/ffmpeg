@@ -1,0 +1,14 @@
+prefix=/home/Ivan/ffmpeg2_install
+exec_prefix=${prefix}
+libdir=/home/Ivan/ffmpeg2_install/lib
+includedir=/home/Ivan/ffmpeg2_install/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 4.0.100
+Requires: 
+Requires.private: libavutil >= 57.0.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm
+Cflags: -I${includedir}

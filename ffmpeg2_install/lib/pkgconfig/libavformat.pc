@@ -1,0 +1,14 @@
+prefix=/home/Ivan/ffmpeg2_install
+exec_prefix=${prefix}
+libdir=/home/Ivan/ffmpeg2_install/lib
+includedir=/home/Ivan/ffmpeg2_install/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 59.2.101
+Requires: 
+Requires.private: libavcodec >= 59.1.100, libswresample >= 4.0.100, libavutil >= 57.0.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lm -lz
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/home/Ivan/ffmpeg2_install
+exec_prefix=${prefix}
+libdir=/home/Ivan/ffmpeg2_install/lib
+includedir=/home/Ivan/ffmpeg2_install/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.0.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}
